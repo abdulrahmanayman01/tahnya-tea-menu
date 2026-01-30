@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طحنية Tea - المنيو</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFF5E6 0%, #FFE4C4 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(139, 69, 19, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #D2691E 0%, #8B4513 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .category {
+            margin-bottom: 35px;
+        }
+
+        .category-title {
+            background: linear-gradient(90deg, #CD853F 0%, #DEB887 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(205, 133, 63, 0.3);
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #F5DEB3;
+            transition: background 0.3s ease;
+        }
+
+        .menu-item:hover {
+            background: #FFF8DC;
+            border-radius: 8px;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-size: 1.1em;
+            color: #5D4037;
+            font-weight: 500;
+        }
+
+        .item-price {
+            background: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1em;
+            min-width: 80px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(255, 107, 53, 0.3);
+        }
+
+        .seasonal-note {
+            background: #FFE4B5;
+            border-right: 4px solid #FF8C42;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            color: #8B4513;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* ========================================
+           📝 تعليمات التعديل:
+           
+           لإضافة منتج جديد:
+           1. انسخ الكود من <div class="menu-item"> لحد </div>
+           2. غير اسم المنتج والسعر
+           
+           لتغيير الألوان:
+           - ابحث عن "background: linear-gradient" وغير الألوان
+           - الألوان الحالية: #D2691E, #8B4513, #CD853F, #FF8C42
+           
+           لإضافة قسم جديد:
+           - انسخ <div class="category"> كاملة
+        ======================================== */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- رأس الصفحة -->
+        <div class="header">
+            <h1>☕ طحنية Tea</h1>
+            <p>منيو المشروبات والحلويات</p>
+        </div>
+
+        <!-- محتوى المنيو -->
+        <div class="content">
+            
+            <!-- المشروبات الساخنة والقهوة -->
+            <div class="category">
+                <div class="category-title">🔥 المشروبات الساخنة والقهوة</div>
+                
+                <div class="menu-item">
+                    <div class="item-name">شاي بطحينة</div>
+                    <div class="item-price">10 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">شاي بطحينة باللوتس</div>
+                    <div class="item-price">15 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">القهوة (غامق أو فاتح)</div>
+                    <div class="item-price">15 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">قهوة فرنساوي</div>
+                    <div class="item-price">20 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">نسكافيه</div>
+                    <div class="item-price">15 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">نسكافيه بالحليب</div>
+                    <div class="item-price">20 ج</div>
+                </div>
+            </div>
+
+            <!-- المشروبات الباردة والآيس كوفي -->
+            <div class="category">
+                <div class="category-title">❄️ المشروبات الباردة والآيس كوفي</div>
+                
+                <div class="menu-item">
+                    <div class="item-name">آيس كوفي</div>
+                    <div class="item-price">20 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">آيس سبانش لاتيه</div>
+                    <div class="item-price">25 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">ليمون نعناع</div>
+                    <div class="item-price">15 ج</div>
+                </div>
+            </div>
+
+            <!-- السموزي والعصائر الطبيعية -->
+            <div class="category">
+                <div class="category-title">🥤 السموزي والعصائر الطبيعية</div>
+                
+                <div class="seasonal-note">
+                    ⚠️ السموزي متوفر في فصل الصيف فقط
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">اسموزي بطيخ</div>
+                    <div class="item-price">15 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">اسموزي تين شوكي</div>
+                    <div class="item-price">20 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">اسموزي مانجا</div>
+                    <div class="item-price">25 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">موز بالحليب</div>
+                    <div class="item-price">25 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">أفوكادو</div>
+                    <div class="item-price">25 ج</div>
+                </div>
+            </div>
+
+            <!-- الحلويات (الوافل) -->
+            <div class="category">
+                <div class="category-title">🧇 الحلويات - الوافل</div>
+                
+                <div class="menu-item">
+                    <div class="item-name">وافل عادي</div>
+                    <div class="item-price">30 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">وافل كاندي وروشييه</div>
+                    <div class="item-price">40 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">وافل بستاشيو (فستق)</div>
+                    <div class="item-price">45 ج</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="item-name">وافل مع إضافات مميزة</div>
+                    <div class="item-price">50 ج</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- الفوتر -->
+        <div class="footer">
+            <p>طحنية Tea - نسعد بخدمتكم ☕</p>
+        </div>
+    </div>
+</body>
+</html>
